@@ -19,19 +19,21 @@ NOTE: only the mean and standard deviation for the time domain (t) variables are
 subject - factor of 1 to 30 identifying each participant
 activity - factor naming the six activities done by the subjects (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
-Each of these base variable names have either "mean"" or "std"" and an "x"", "y"", or "z"" appended to the name. These represent with the mean or standard deviation data for each of the 3-axial directions measured.
-tbodyacc
-tgravityacc
-tbodyaccjerk
-tbodygyro
-tbodygyrojerk
+Each of these base variable names have either "mean"" or "std"" and an "x"", "y"", or "z"" appended to the name. These represent with the mean or standard deviation data for each of the 3-axial directions measured:
 
-Each of these base variable names have either "mean"" or "std"" appended to the name. These represent with the mean or standard deviation data for the magnitude calculated from the 3 dimensional signals.
-tbodyaccmag
-tgravityaccmag
-tbodyaccJerkmag
-tbodygyromag
-tbodygyroJerkmag
+* tbodyacc
+* tgravityacc
+* tbodyaccjerk
+* tbodygyro
+* tbodygyrojerk
+
+Each of these base variable names have either "mean"" or "std"" appended to the name. These represent with the mean or standard deviation data for the magnitude calculated from the 3 dimensional signals:
+
+* tbodyaccmag
+* tgravityaccmag
+* tbodyaccJerkmag
+* tbodygyromag
+* tbodygyroJerkmag
 
 The resulting matrix has 2 id variables (subject, activity) and 40 measurement variables.
 
