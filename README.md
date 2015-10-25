@@ -19,7 +19,7 @@ The output of this project is a tidy data set holding the average of each mean a
 
 run_analysis.R
 
-This file provides in coded format the instructions to transform the original data into the required tidy data set and write the to an output file:
+This file provides in coded format the instructions to transform the original data into the required tidy data set and write that to an output file:
 
 tidyset.txt
 
@@ -27,6 +27,7 @@ tidyset.txt
 The function run_analysis() can run if the top-level directory ("UCI HAR Dataset") of the original extracted data set is in the working directory. The output tidyset.txt is written to the working directory. The tidyset.txt can be most easily viewed by running these commands:
 
 data <- read.table("./tidyset.txt", header = TRUE)
+
 View(data)
 
 ==================================================================
