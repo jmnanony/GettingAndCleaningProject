@@ -1,5 +1,5 @@
 
-# You should create one R script called run_analysis.R that does the following. 
+# R script called run_analysis.R that does the following. 
 #   1. Merges the training and the test sets to create one data set.
 #   2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 #   3. Uses descriptive activity names to name the activities in the data set
@@ -51,7 +51,7 @@ run_analysis <- function() {
 # Make subject column a factor as well
     data$subject <- factor(data$subject, levels = c(1:30), labels = c(1:30))
 
-# Keep only the columns for the subject activity and the mean and std variables in the time (t) domain    
+# Keep only the columns for the subject, activity, and the mean and std variables in the time (t) domain    
     data <- select(data, subject, activity, matches("^t.*(mean|std)"))
 
     
